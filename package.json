@@ -4,8 +4,9 @@
   "description": "Chatting application created using MERN.",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server/server.js",
-    "start": "node server/server.js",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node server/server.js",
+    "client": "npm start --prefix client",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "author": "Varun Tiwari",
@@ -22,7 +23,5 @@
     "socket.io": "^4.4.1",
     "validator": "^13.7.0"
   },
-  "devDependencies": {
-    "nodemon": "^2.0.15"
-  }
+  "devDependencies": {}
 }
