@@ -26,6 +26,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "dev": "react-scripts start", // Added dev script for running the client in development
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
