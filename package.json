@@ -7,7 +7,7 @@
     "dev": "nodemon server/server.js",
     "start": "node server/server.js",
     "build": "npm install --prefix client && npm run build --prefix client",
-    "install-client": "cd client && npm install",
+    "install-client": "cd client && npm install --force",
     "build-client": "cd client && npm run build",
     "start-client": "cd client && npm run start"
   },
